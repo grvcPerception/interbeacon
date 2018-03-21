@@ -1,0 +1,11 @@
+<!--
+-->
+<launch>
+
+        <node pkg="interbeacon" type="euroc_range" name="euroc_range">
+            <param name="interbeaconPort" value="/dev/ttyUSB1"/>
+	    <!-- This parameter needs the value of the highest ID -->
+            <param name="idMax" value="30"/>
+        </node>
+
+</launch>

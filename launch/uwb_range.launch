@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="interbeacon" type="tag.py" name="uwb_measurements" output="screen">
+        <param name="port" value="/dev/uwb"/> <!-- ttyACM0 -->
+        <param name="frequency" value="100"/>
+	<param name="topic" value="ranges_uwb"/>
+    </node>
+</launch>
